@@ -132,7 +132,7 @@ export default function HomeScreen() {
             className="text-base"
             style={{ color: themeColors.textSecondary }}
           >
-            Explora el universo de Rick & Morty
+            Explora los personajes del universo de Rick & Morty
           </Text>
         </View>
 

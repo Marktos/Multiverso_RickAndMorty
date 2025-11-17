@@ -27,12 +27,17 @@ export default function CharactersScreen() {
 
   useEffect(() => {
     telemetry.logScreenView('Characters');
-    
-    // Si viene un filtro de la pantalla Home
+  }, []);
+
+  // Efecto separado para manejar cambios en params.filter
+  useEffect(() => {
     if (params.filter) {
       setStatusFilter(params.filter as string);
+    } else if (params.filter === undefined && statusFilter) {
+      // Si el parametro del filtro es undefined y había un filtro, lo limpio
+      setStatusFilter('');
     }
-  }, []);
+  }, [params.filter]);
 
   useEffect(() => {
     loadCharacters(true);
@@ -88,6 +93,7 @@ export default function CharactersScreen() {
     telemetry.logEvent('SEARCH', { query: searchQuery });
     setPage(1);
     setHasMore(true);
+    setCharacters([]);
     loadCharacters(true);
   };
 
@@ -95,6 +101,7 @@ export default function CharactersScreen() {
     setRefreshing(true);
     setPage(1);
     setHasMore(true);
+    setCharacters([]);
     loadCharacters(true);
   };
 
@@ -109,6 +116,9 @@ export default function CharactersScreen() {
     setSearchQuery('');
     setPage(1);
     setHasMore(true);
+    setCharacters([]);
+    // Forzar recarga inmediata
+    setTimeout(() => loadCharacters(true), 100);
   };
 
   const renderFooter = () => {

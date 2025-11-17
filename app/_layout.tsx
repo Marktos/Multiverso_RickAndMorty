@@ -4,6 +4,8 @@ import { FavoritesProvider } from '../context/FavoritesContext';
 import { ThemeProvider } from '../context/ThemeContext';
 import telemetry from '../services/telemetry';
 
+
+
 export default function RootLayout() {
   useEffect(() => {
     telemetry.logAppStart();
