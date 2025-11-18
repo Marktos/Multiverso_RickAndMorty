@@ -57,7 +57,7 @@ Asegurate de tener instalado:
 ###  Clonar el repositorio
 
 ```bash
-git clone <URL_DEL_REPO>
+git clone <https://github.com/Marktos/Multiverso_RickAndMorty.git>
 cd Multiverso_RickAndMorty
 ```
 ---
