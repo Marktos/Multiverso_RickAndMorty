@@ -1,50 +1,82 @@
-# Welcome to your Expo app 👋
+# 🌌 MultiversoHub – Rick & Morty App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicación móvil educativa inspirada en el universo de **Rick & Morty**.  
+Permite explorar personajes, guardar favoritos, buscar, filtrar y funcionar parcialmente sin conexión.
 
-## Get started
+Trabajo practico realizado por **Marcos Neculman** para la materia Desarrollo Movil 
 
-1. Install dependencies
+**Profesor:** Alejandro Arriagada
 
-   ```bash
-   npm install
-   ```
+**README CREADO EN:** https://markdownlivepreview.com/
 
-2. Start the app
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## ✨ Características Principales
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- 🚀 **Listado de personajes** con paginación infinita  
+- 👤 **Detalle completo** de cada personaje, incluyendo episodios en los que aparece  
+- ⭐ **Sistema de favoritos** persistente (guardado local)  
+- 🔍 **Búsqueda** por nombre  
+- 🎚️ **Filtros** por estado (Vivo / Muerto / Desconocido)  
+- 📡 **Modo offline** con caché local  
+- 🌓 **Tema claro/oscuro** seleccionable  
+- 📊 **Pantalla Home** con estadísticas y accesos rápidos  
+- 📈 **Telemetría básica** para analizar eventos de uso  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🛠️ Tecnologías Utilizadas
 
-When you're ready, run:
+- **React Native** con **Expo**
+- **Expo Router** 
+- **TypeScript** 
+- **NativeWind**
+- **Context API + useReducer**
+- **AsyncStorage** 
+- **NetInfo**
+- **Rick and Morty API** como backend público
+
+---
+
+## 📦 Instalación
+
+### 📌 Prerrequisitos
+
+Asegurate de tener instalado:
+
+- **Node.js** v14+
+- **npm**
+- **Expo Go** en tu dispositivo móvil (Android)
+- **Android Studio** 
+
+---
+
+## 🔧 Pasos de instalación
+
+###  Clonar el repositorio
 
 ```bash
-npm run reset-project
+git clone <URL_DEL_REPO>
+cd Multiverso_RickAndMorty
+```
+---
+
+###  Instalar dependencias
+
+```bash
+npm install
+
+```
+---
+###  Iniciar la app
+
+```bash
+npx expo start
+
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### ELEGIO LA OPCION DE EJECUCION
+Presionar **a** → abrir en emulador Android
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Escanear el **QR** → abrir en dispositivo físico con Expo Go
